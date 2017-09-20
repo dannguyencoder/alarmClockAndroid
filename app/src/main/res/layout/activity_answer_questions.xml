@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="insideInset"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"/>
+
+            <TextView
+                android:id="@+id/noidungcauhoi_tv"
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khi khởi động chương trình android, file nào là file được chạy đầu tiên ?"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:gravity="center"/>
+
+            <RadioGroup
+                android:id="@+id/dapan_rg"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/dapanA_rb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A. AndroidManifest.xml"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/dapanB_rb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B. Tất cả các file đều được chạy cùng một lúc"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/dapanC_rb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C. Không có file nào được chạy đầu tiên"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/dapanD_rb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tất cả các đáp án đều sai"
+                    android:textSize="16sp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/traloi_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trả lời"/>
+
+            <Button
+                android:id="@+id/boqua_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bỏ qua (15 giây)"/>
+        </LinearLayout>
+
+
+
+</ScrollView>
